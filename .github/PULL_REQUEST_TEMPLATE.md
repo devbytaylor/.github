@@ -15,6 +15,17 @@
 
 <!-- Describe key changes, approved scope, and anything deliberately excluded. -->
 
+## Requirements provenance
+
+<!-- Identify the approved requirements used for implementation and independent review.
+     For repository specs, provide the committed path and exact spec commit SHA;
+     include a version only if the spec explicitly defines one.
+     For issue-only scope, provide the issue URL/number and approved acceptance-criteria
+     snapshot or digest; record reapproval if that scope changed. -->
+- **Approved requirements:** <!-- spec path + SHA [+ defined version], or issue + acceptance-criteria snapshot/digest -->
+- **Verified requirements baseline:** <!-- commit SHA / applicable ref -->
+- **Changes after approval:** <!-- none, or linked reapproval evidence -->
+
 ## Verification
 
 <!-- List exact commands, outcomes, test counts, skipped tests, and CI results.
@@ -35,6 +46,9 @@
 
 - [ ] All fully resolved issues use `Closes #...`; incomplete work uses `Refs #...`
 - [ ] PR scope and verification evidence match the current commit
+- [ ] Required repository specifications are committed and included in this PR or already in the default branch
+- [ ] Issue-only acceptance criteria match the approved snapshot/digest, or reapproval is documented
+- [ ] All Git worktrees were inventoried (`git worktree list --porcelain`, where applicable); staged, unstaged, untracked, and unfinished work was inspected, preserved, or resolved
 - [ ] CI status checked for the exact PR head commit
 - [ ] Human owner has approved merging
 
